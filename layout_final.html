@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 <style type="text/css">
+<!--
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -11,6 +12,7 @@ body {
 	color: #000;
 	background-color: #fff;
 }
+
 /* ~~ Element/tag selectors ~~ */
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
 	padding: 0;
@@ -24,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
 }
+
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
 	color: #42413C;
@@ -36,6 +39,7 @@ a:visited {
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
 }
+
 /* ~~this fixed width container surrounds the other divs~~ */
 .container {
 	width: 950px;
@@ -45,6 +49,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin-bottom: 0;
 	margin-left: auto;
 }
+
 /* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
 .header {
 	background-color: #090;
@@ -52,11 +57,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	background-repeat: no-repeat;
 	height: 130px;
 }
+
 /* ~~ These are the columns for the layout. ~~ 
+
 1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
 2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
 3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
 4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
 */
 .sidebar1 {
 	float: left;
@@ -72,10 +83,12 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding-bottom: 10px;
 	padding-left: 0;
 }
+
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
 .content ul, .content ol { 
 	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
 }
+
 /* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
 ul.nav {
 	list-style: none; /* this removes the list marker */
@@ -144,6 +157,7 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	border-bottom-style: solid;
 	border-bottom-color: #060;
 }
+-->
 </style></head>
 
 <body>
@@ -152,44 +166,56 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
   <div id="apDiv1"><img src="images/butterfly-ovr.gif" width="170" height="150" alt="GreenStart Logo" /></div>
   <div class="header"><!-- end .header --></div>
   <div id="h-navbar">Home | About Us | Contact Us</div>
-  
+  <div class="sidebar1">
+    <ul class="nav">
+      <li><a href="#">Green News</a></li>
+      <li><a href="#">Green Products</a></li>
+      <li><a href="#">Green Events</a></li>
+      <li><a href="#">Green Travel</a></li>
+      <li><a href="#">Green Tips</a></li>
+    </ul>
+    <img src="" alt="" name="Sidebar" width="180" height="150" id="Sidebar" />
+    <p>Insert caption here.</p>
+  <!-- end .sidebar1 --></div>
   <div class="content">
-    <h1>Insert main heading here</h1>
-    <p>Insert content here</p>
-	<div id="travel">
-		<hr width="95%" color="#009900">
-		<h2 color="#009900">2010 Eco-Tour of Italy</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis orci erat, et venenatis libero condimentum sit amet. Integer ac metus vel magna efficitur pretium non eu quam. Fusce et augue sit amet eros posuere cursus. Pellentesque malesuada cursus velit eu porta. Sed aliquam, ipsum sit amet placerat feugiat, tellus nibh tempor ligula, nec maximus magna justo at mi. Maecenas purus libero, blandit at ipsum ac, mollis auctor neque. Sed at laoreet ex. Praesent vulputate massa orci, a rutrum turpis rhoncus id. </p>
-		<hr width="95%" color="#009900">
-		<table>
-		<tr>
-			<td >
-			
-			<h2><u>Venice: City of Canals</u> (5 days)</h2>
-			<p>Fusce efficitur fermentum semper. Proin non augue diam. Pellentesque non dolor erat. Morbi at commodo nibh. Duis tempor, neque nec porta rutrum, diam massa viverra tellus, ut imperdiet libero massa et tellus. Nulla facilisi. In non est sed elit congue rutrum ut nec purus. Suspendisse dignissim tempor sem ac volutpat. </p>
-			</td>
-			<td rowspan="4">
-			<img align="right" src="images\ecotour.jpg" height="120%">
-			</td>
-		</tr>
-		
-		<tr>
-			<td>
-			<hr width="95%" color="#009900">
-			<h2><u>Florence: City of Art</u> (5 days)</h2>
-			<p>Vivamus condimentum mauris ac est ultrices porta. Phasellus interdum condimentum leo, nec rhoncus est. Maecenas in congue sapien, lobortis mollis erat. Aenean pellentesque facilisis ipsum sit amet faucibus. Morbi imperdiet turpis sed quam faucibus, in posuere ex ullamcorper. Fusce ut tempor est. </p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<hr width="95%" color="#009900">
-			<h2><u>Sienna: City of Beauty</u> (2 days)</h2>
-			<p>Vivamus condimentum mauris ac est ultrices porta. Phasellus interdum condimentum leo, nec rhoncus est. Maecenas in congue sapien, lobortis mollis erat. Aenean pellentesque facilisis ipsum sit amet faucibus. Morbi imperdiet turpis sed quam faucibus, in posuere ex ullamcorper. Fusce ut tempor est. </p>
-			</td>
-		</tr>
-		
-		</table>
-	</div>
+    <div id="Diemen">
+       <h1>2011 Eco-Tour Sign-up Form</h1>
+        <p>To sign up for the 2011 Eco-Tour, please fill out the following fields:</p>
+        <form>
+            <fieldset>
+                <legend><b>Your Contact Information:</b></legend>
+                Name: <input type="text"><br>
+                Email: <input type="text"><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Costumer Account Login</b></legend>
+               <i>Nam strzelać nie kazano. - Wstąpiłem na działo
+I spójrzałem na pole; dwieście armat grzmiało.
+Artyleryi ruskiej ciągną się szeregi,
+Prosto, długo, daleko, jako morza brzegi;
+I widziałem ich wodza: przybiegł, mieczem skinął
+I jak ptak jedno skrzydło wojska swego zwinął;
+Wylewa się spod skrzydła ściśniona piechota
+Długą czarną kolumną, jako lawa błota,
+Nasypana iskrami bagnetów. Jak sępy
+                   Czarne chorągwie na śmierć prowadzą zastępy.</i><br>
+                Password: <input type="password"><br>
+                Repeat Passowrd: <input type="password"><br>
+            </fieldset>
+            <fieldset>
+                <legend><b>2011 Eco-Tour:</b></legend>
+                Przeciw nim sterczy biała, wąska, zaostrzona,
+                Jak głaz bodzący morze, reduta Ordona:
+                Name: <input type="checkbox" name="1">1 September 1939<br>
+                Email: <input type="checkbox" name="1">I like turtles<br>
+                Who pipule goinng with u men<br>
+                <input type="radio" name="2">Łan<br>
+                <input type="radio" name="2">Tri<br>
+                <input type="radio" name="2">Tu<br>
+            </fieldset>
+        </form>
+    </div>
+    
     <!-- end .content --></div>
   <div class="footer">
     <p>Copyright 2010 GreenStart, All rights reserved.</p>
