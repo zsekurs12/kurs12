@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 <style type="text/css">
-<!--
+
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -69,7 +69,12 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
 
 */
-
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background: #EADCAE;
+	padding-bottom: 10px;
+}
 .content {
 	width: 770px;
 	float: left;
@@ -152,7 +157,6 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	border-bottom-style: solid;
 	border-bottom-color: #060;
 }
--->
 </style></head>
 
 <body>
@@ -161,20 +165,54 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
   <div id="apDiv1"><img src="images/butterfly-ovr.gif" width="170" height="150" alt="GreenStart Logo" /></div>
   <div class="header"><!-- end .header --></div>
   <div id="h-navbar">Home | About Us | Contact Us</div>
-  
+  <div class="sidebar1">
     <ul class="nav">
-      Green News
-      Green Products
-      Green Events
-      Green Travel
-      Green Tips
+      <li><a href="#">Green News</a></li>
+      <li><a href="#">Green Products</a></li>
+      <li><a href="#">Green Events</a></li>
+      <li><a href="#">Green Travel</a></li>
+      <li><a href="#">Green Tips</a></li>
     </ul>
-   
+    <img src="" alt="" name="Sidebar" width="180" height="150" id="Sidebar" />
     <p>Insert caption here.</p>
   <!-- end .sidebar1 --></div>
   <div class="content">
     <h1>Insert main heading here</h1>
     <p>Insert content here</p>
+	<div id="travel">
+		<hr width="95%" color="#009900">
+		<h2 color="#009900">2010 Eco-Tour of Italy</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis orci erat, et venenatis libero condimentum sit amet. Integer ac metus vel magna efficitur pretium non eu quam. Fusce et augue sit amet eros posuere cursus. Pellentesque malesuada cursus velit eu porta. Sed aliquam, ipsum sit amet placerat feugiat, tellus nibh tempor ligula, nec maximus magna justo at mi. Maecenas purus libero, blandit at ipsum ac, mollis auctor neque. Sed at laoreet ex. Praesent vulputate massa orci, a rutrum turpis rhoncus id. </p>
+		<hr width="95%" color="#009900">
+		<table>
+		<tr>
+			<td >
+			
+			<h2><u>Venice: City of Canals</u> (5 days)</h2>
+			<p>Fusce efficitur fermentum semper. Proin non augue diam. Pellentesque non dolor erat. Morbi at commodo nibh. Duis tempor, neque nec porta rutrum, diam massa viverra tellus, ut imperdiet libero massa et tellus. Nulla facilisi. In non est sed elit congue rutrum ut nec purus. Suspendisse dignissim tempor sem ac volutpat. </p>
+			</td>
+			<td rowspan="4">
+			<img align="right" src="images\ecotour.jpg" height="120%">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+			<hr width="95%" color="#009900">
+			<h2><u>Florence: City of Art</u> (5 days)</h2>
+			<p>Vivamus condimentum mauris ac est ultrices porta. Phasellus interdum condimentum leo, nec rhoncus est. Maecenas in congue sapien, lobortis mollis erat. Aenean pellentesque facilisis ipsum sit amet faucibus. Morbi imperdiet turpis sed quam faucibus, in posuere ex ullamcorper. Fusce ut tempor est. </p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<hr width="95%" color="#009900">
+			<h2><u>Sienna: City of Beauty</u> (2 days)</h2>
+			<p>Vivamus condimentum mauris ac est ultrices porta. Phasellus interdum condimentum leo, nec rhoncus est. Maecenas in congue sapien, lobortis mollis erat. Aenean pellentesque facilisis ipsum sit amet faucibus. Morbi imperdiet turpis sed quam faucibus, in posuere ex ullamcorper. Fusce ut tempor est. </p>
+			</td>
+		</tr>
+		
+		</table>
+	</div>
     <!-- end .content --></div>
   <div class="footer">
     <p>Copyright 2010 GreenStart, All rights reserved.</p>
